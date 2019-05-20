@@ -1,4 +1,4 @@
-# mm4-equipe-x-europe
+# mm4-equipe-8-europe
 
 ## Introduction
 
