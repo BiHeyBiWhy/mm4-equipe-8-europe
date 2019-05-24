@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Notre site a été conçu a l'occasion des élections européennes 2019, il a un objectif principal, celui de donner aux citoyens les moyens de s'informer sur les differents partis. L'acces à l'info se veut le plus simple posssible. Aussi bien au niveau de l'usage du site que du contenu, exempt de tout terme technique. 
 
 ## Documentation sur l'API
 
@@ -17,5 +17,5 @@ La gestion des utilisateurs ce fait via une API CouchDB dont la description est 
 
 ## Restitution
 
-- Lien Google Drive présentation 1 <add-link-here>
-- Lien Google Drive présentation 2 <add-link-here>
+- Lien Google Drive vers Présentation <https://drive.google.com/file/d/18SkOWNmkO4QjINDp44NQq1d-y9H_ejDg/view?usp=sharing>
+- Lien Google Drive vers Figma pour maquettes <https://www.figma.com/file/SVK9xekGqwyVEukMhLdtx1uu/201905_Semaine-UX?node-id=0%3A2469>
