@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <title>Europa - Coordonnées</title>
+</head>
+
+<body id="bodyresult">
+    <header id="quiznav">
+        <div id="navdiv1" class="navdiv">
+            <img src="img/menuquiz.png">
+            <a href="quizz1.html">Quiz</a>
+        </div>
+        <div id="navdiv2" class="navdiv">
+            <img src="img/menunews.png">
+            <a href="newsroom.html">Newsroom</a>
+        </div>
+        <div id="navdiv3" class="navdiv">
+            <img src="img/menuvoter.png">
+            <a href="voter.html">Où Voter ?</a>
+        </div>
+    </header>
+    <main>
+        <div id="fond">
+
+        </div>
+        <div id="h5result">
+            <h5>Reçois tes</h5>
+            <h5>résultats</h5>
+        </div>
+
+        <form action="newsroom.html" method="POST">
+            <section id="coor">
+                <div class="coorchamps">
+                    <label>Nom & Prénom</label>
+                    <input type="text" class="input" name="name" required>
+                </div>
+                <div class="coorchamps">
+                    <label>Email</label>
+                    <input type="email" class="input" name="email" required>
+                </div>
+                <div class="coorchamps">
+                    <label>Âge</label>
+                    <input type="text" class="input" name="age" required>
+                </div>
+            </section>
+            <input id="coorbutton" type="submit" value="Envoyer">
+        </form>
+    </main>
+
+    <script>
+
+        const formSubmition = () => {
+            // Bind the submit event from the form
+            document.querySelector('form').addEventListener('submit', async event => {
+                console.log('test')
+                event.preventDefault();
+                // Use a POST fetch method to register data
+
+
+                const fetchRequest = await fetch('https://ldp.dwsapp.io/mm4-europe/', {
+                    body: JSON.stringify({
+                        name: document.querySelector('[name="name"]').value,
+                        email: document.querySelector('[name="email"]').value,
+                        age: document.querySelector('[name="age"]').value,
+                        author: 'valentin-pascal'
+                    }),
+                    method: "POST",
+                    headers: new Headers({
+                        "Content-Type": "application/json"
+                    })
+                })
+
+                const fetchResponse = await fetchRequest.json();
+                window.location.href = "newsroom.html"
+            })
+        }
+        // Wait for DOM content
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get form submission
+            formSubmition();
+
+            //console.log('coucou')
+            // Get your users
+            //asyncFetch('https://ldp.dwsapp.io/mm4-europe/_all_docs?include_docs=true');
+        })
+    </script>
+</body>
+
+</html>
