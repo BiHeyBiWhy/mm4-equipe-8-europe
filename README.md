@@ -17,5 +17,5 @@ La gestion des utilisateurs ce fait via une API CouchDB dont la description est 
 
 ## Restitution
 
-- Lien Google Drive vers Présentation <https://drive.google.com/file/d/18SkOWNmkO4QjINDp44NQq1d-y9H_ejDg/view?usp=sharing>
-- Lien Google Drive vers Figma pour maquettes <https://www.figma.com/file/SVK9xekGqwyVEukMhLdtx1uu/201905_Semaine-UX?node-id=0%3A2469>
+- Lien Google Drive vers Présentation : https://drive.google.com/file/d/1oRcGC0U15tEytAg-8niZcEMH9fpD5OUG/view?usp=sharing
+- Lien Google Drive vers Figma pour maquettes : <https://www.figma.com/file/SVK9xekGqwyVEukMhLdtx1uu/201905_Semaine-UX?node-id=0%3A2469>
